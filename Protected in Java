@@ -1,0 +1,5 @@
+Protected :  -  Basically, the protected keyword is an access modifier for method and variable of a class.
+When a method or a variable is marked as protected, it can be accessed from:
+    (a) Within the enclosing class.
+    (b) Other classes in the same package.
+    (c) by creating sub-classes, regardless of packages.

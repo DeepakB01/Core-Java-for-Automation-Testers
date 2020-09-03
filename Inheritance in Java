@@ -1,0 +1,25 @@
+Question # 1 : - Are static methods inherited in Java?
+Answer: - 
+
+package new1;
+public class Person {
+	public static void display(){
+		System.out.println("This is Parent Class Static Method");
+	}
+}
+
+package new1;
+public class Employer extends Person {
+   public void show() 
+   {
+      display();  //this also works perfactly fine
+   }   
+	public static void main(String[] args) {
+		Person.display(); // this is one of the way to call public static method of parent class
+    Employer.display(); // this also works because static methods become part of sub-class which is inheriting the parent class
+	}
+
+}
+
+Static methods which are inherited by sub-class can not be overridden. In case you decide to create a static method of same signature as 
+defined in super-class then static method of super-class will be hidden
